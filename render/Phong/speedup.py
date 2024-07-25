@@ -240,6 +240,8 @@ def generate_faces_new(screen, indices, uv_indices, norm_indices, pts, uv_triang
                 ptsa, ptsb, ptsc = out_pts[0], out_pts[2], out_pts[3]
                 norma, normb, normc = out_norm[0], out_norm[2], out_norm[3]
                 view_tri_a, view_tri_b, view_tri_c = out_view_tri[0], out_view_tri[2], out_view_tri[3]
+            else:
+                continue
 
         render_opaque_face(screen, zbuffer, ptsa, ptsb, ptsc, uva, uvb, uvc,
                            norma, normb, normc, view_tri_a, view_tri_b, view_tri_c, uniform_l,
