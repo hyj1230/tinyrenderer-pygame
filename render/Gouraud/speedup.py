@@ -187,5 +187,7 @@ def generate_faces_new(screen, indices, uv_indices, norm_indices, pts, uv_triang
                 uvc = out_uv[3, 0], out_uv[3, 1]
                 ptsa, ptsb, ptsc = out_pts[0], out_pts[2], out_pts[3]
                 norma, normb, normc = out_norm[0], out_norm[2], out_norm[3]
+            else:
+                continue
         render_opaque_face(screen, zbuffer, ptsa, ptsb, ptsc, uva, uvb, uvc, width, height,
                            texture_array, (norma, norma, norma), (normb, normb, normb), (normc, normc, normc), O2)
